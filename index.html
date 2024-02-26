@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/stylesheets.css">
+    <meta name="description" content="Cukiernia An-Ka, torty na zamówienie i wiele innych słodkości!">
+    <title>Olimpijka fotografie</title>
+</head>
+
+<body>
+    <section class="with-topnav" id="myTopnav">
+        <img src="./src/upload/logo.png" class="logo-mobile" style="" alt="logo">
+        <div class="mobile-menu-toggle" onclick="mobileMenuToggle(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div>
+            <img src="./src/upload/logo.png" class="logo-full"  alt="logo">
+        </div>
+        <div style="padding: 0em 1em;">
+            <a href="/">O mnie</a>
+            <a href="/">Oferta</a>
+            <a href="/">Wasze historie</a>
+            <a href="/">Kontakt</a>
+        </div>
+    </section>
+
+
+    <section class="footer" id="kontakt">
+    </section>
+    <section class="autor">
+        <p>Projekt strony: Aleksandra Gabryś; <a href="https://paweldomalewski.github.io/domalewski-IT/">Wykonanie:
+                Paweł Domalewski</a></p>
+    </section>
+
+
+
+
+
+</body>
+<script>
+    function mobileMenuToggle(x) {
+        x.classList.toggle("change");
+        var x = document.getElementById("myTopnav");
+        if (x.className === "with-topnav") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "with-topnav";
+        }
+    }
+</script>
+<script>/*
+var images = ['./src/upload/1.png', './src/upload/2.webp', './src/upload/3.png', './src/upload/7.png', './src/upload/11.png', './src/upload/13.png', './src/upload/5.png', './src/upload/8.png'];
+var index = 1;
+var heroSection = document.getElementById('backgroundHero');
+
+function changeBackground() {
+heroSection.style.backgroundImage = 'linear-gradient(to right, white , transparent), url(' + images[index] + ')';
+index = (index + 1) % images.length;
+}
+
+setInterval(changeBackground, 5500);
+/*
+document.addEventListener('visibilitychange', function() {
+if (!document.hidden) {
+location.reload();
+}
+});*/
+</script>

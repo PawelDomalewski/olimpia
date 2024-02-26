@@ -1,0 +1,153 @@
+:root {
+    --main-color: #4e1f12;
+    --accent-color: #8F6E2B;
+    --btn-bg: rgb(219, 29, 29);
+    --shadowbox: #4e1f12;
+    --bg-color-1: #EAE1D8;
+    --txt-color-1: #000000;
+}
+
+* {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--txt-color-1);
+    margin: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./upload/background.png);
+}
+
+
+.with-topnav {
+    background-color: var(--bg-color-1);
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: var(--txt-color-1);
+}
+
+.with-topnav a {
+    color: var(--txt-color-1);
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    width: auto;
+}
+
+
+
+.with-topnav a:first-child {
+    padding-left: 0em;
+}
+
+.with-topnav a:last-child {
+    padding-right: 0em;
+}
+
+/*
+.with-topnav a:nth-child(odd) {
+    padding: 2px;
+    background-color: var(--main-color);
+    height: 1em;
+}*/
+
+.with-topnav a:hover {
+    color: var(--accent-color);
+
+}
+
+.logo-mobile {
+    display: none;
+    float: left;
+    padding: 0.5em;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1em;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.autor {
+    background-color: var(--txt-color-1);
+    text-align: center;
+    font-size: 0.80em;
+}
+
+.autor p {
+    color: black;
+}
+
+.autor a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 960px) {
+
+    .with-topnav a,
+    .logo-full {
+        display: none;
+    }
+
+    .mobile-menu-toggle,
+    .logo-mobile,
+    .with-topnav {
+        display: block;
+    }
+
+    .with-topnav.responsive {
+        position: sticky;
+        background-image: url(/uploads/Main\ screen.png);
+        background-position: -986px 0px;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .with-topnav.responsive a {
+        float: left;
+        color: var(--second-color);
+        display: block;
+        text-align: center;
+        padding: 1em 0em;
+        width: 100%;
+        background-color: var(--backgroundcolor);
+    }
+
+}
