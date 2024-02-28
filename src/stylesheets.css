@@ -112,6 +112,41 @@ body {
     line-height: 2rem;
 }
 
+.col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10%;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.rev:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.img-chess {
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.text-chess {
+    width: 100%;
+    border: solid 1px var(--txt-color-1);
+    background-color: white;
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+
+
+.col {
+    width: 45%;
+}
+
+
+
 .footer {
     background-color: var(--bg-color-1);
     display: flex;
@@ -206,6 +241,23 @@ body {
         margin: 2rem 5%;
     }
 
+    .col-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 5%;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    
+    .rev:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
     .footer-info {
         display: flex;
         flex-direction: column;
@@ -215,7 +267,7 @@ body {
         padding-top: 1.5rem;
     }
 
-    .footer-info> div:first-child {
+    .footer-info>div:first-child {
         text-align: center;
     }
 }
