@@ -1,10 +1,10 @@
 :root {
     --main-color: #4e1f12;
     --accent-color: #8F6E2B;
-    --btn-bg: rgb(219, 29, 29);
     --shadowbox: #4e1f12;
     --bg-color-1: #EAE1D8;
     --txt-color-1: #000000;
+    --txt-color-footer: #555555;
 }
 
 * {
@@ -103,22 +103,32 @@ body {
     transform: translate(0, -11px) rotate(45deg);
 }
 
+.text-main {
+    margin: 2rem 20%;
+    border: solid 1px var(--txt-color-1);
+    background-color: white;
+    padding: 2rem;
+}
+
 .footer {
     background-color: var(--bg-color-1);
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    justify-content: center;
 }
 
 .footer-info {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 2rem 0;
 }
 
 .footer-info > div a {
     text-decoration: none;
+    color: var(--txt-color-footer);
 }
 
 .footer-info > div > ul li {
@@ -128,6 +138,19 @@ body {
 
 .footer-info > div > ul h4 {
     padding-bottom: 1.5rem;
+    color: var(--txt-color-1);
+    font-weight: 600;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.underline {
+    background-color: #383838;
+    padding: 1px;
+    margin: 0px 10%;
 }
 
 .autor {
