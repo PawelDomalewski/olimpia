@@ -313,6 +313,10 @@ ul > h2 {
         width: 100%;
     }
 
+    .text-chess > ul {
+        padding: 0;
+    }
+
     .footer-info {
         display: flex;
         flex-direction: column;
