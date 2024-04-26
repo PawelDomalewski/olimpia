@@ -157,6 +157,7 @@ body {
     border-right: none;
     border-bottom: 1px solid black;
     margin: 1.5rem;
+    font-size: 1.5em;
 }
 
 .form > input:focus {
@@ -187,6 +188,17 @@ body {
     border: 2px solid black;
     color: #000000;
     transition: 200ms ;
+}
+
+ul > li > a {
+    text-decoration: none;
+    line-height: 2rem;
+    font-size: 1em;
+    text-wrap: wrap;
+}
+
+ul > h2 {
+    margin-bottom: 0.5rem;
 }
 
 

@@ -36,34 +36,34 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="./src/upload/Hero01.jpg" style="width:100%">
+                <div class="numbertext">1 / 3</div>
+                <img src="./src/upload/Hero01.jpg" style="width:100%">
             </div>
-            
+
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="./src/upload/Hero01.jpg" style="width:100%">
+                <div class="numbertext">2 / 3</div>
+                <img src="./src/upload/Hero01.jpg" style="width:100%">
             </div>
-            
+
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="./src/upload/Hero01.jpg" style="width:100%">
+                <div class="numbertext">3 / 3</div>
+                <img src="./src/upload/Hero01.jpg" style="width:100%">
             </div>
-            
+
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
-    <section class="col-2">
-        <div class="col text-chess">
+    <section class="col-2" style="justify-content: space-between;">
+        <div class="text-chess col" style="margin-bottom: 2rem;">
             <form class="form" name="kontakt" netlify>
                 <input name="Imię" type="text" placeholder="Imię" required></input>
                 <input name="E-mail" type="text" placeholder="Twój adres e-mail" required></input>
@@ -72,7 +72,23 @@
                 <p><button type="submit">Wyślij</button></p>
             </form>
         </div>
-        <div class="col"></div>
+        <div class="text-chess col">
+            <ul style="flex-direction: column;display: flex; list-style: none; font-size: 1em;">
+                <h2>Jestem tutaj:</h2>
+                <li><a href="https://www.facebook.com/"><img style="padding: 2rem 2rem 2rem 0rem;"
+                            src="./src/upload/logo-fb2.png">Olimpia Zyborowicz</a></li>
+                <li><a href="https://www.instagram.com/"><img style="padding: 2rem 2rem 2rem 0rem;"
+                            src="./src/upload/instagram-logo.png">olimpijka.fotografie</a></li>
+                <h2>Zadzwoń:</h2>
+                <li style="display: inline-flex;"><img src="./src/upload/phone-icon.png"><a style="margin-left: 1rem;"
+                        href="tel:+48790881483">790 881 483</a></li>
+                <h2>Napisz:</h2>
+                <li style="display: inline-flex; margin-top: 1rem;"><img src="./src/upload/mail-icon.png">
+                    <a style="margin-left: 1rem;"
+                        href="mailto:olimpia.zyborowicz@gmail.com">olimpia.zyborowicz@gmail.com</a>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section class="footer" id="kontakt">
@@ -95,15 +111,19 @@
             <div>
                 <ul style="flex-direction: column;display: flex;">
                     <h4>KONTAKT</h4>
-                    <li style="display: inline-flex;"><img src="./src/upload/phone-icon.png"><a style="margin-left: 1rem;" href="tel:+48790881483">790 881 483</a></li>
+                    <li style="display: inline-flex;"><img src="./src/upload/phone-icon.png"><a
+                            style="margin-left: 1rem;" href="tel:+48790881483">790 881 483</a></li>
                     <li style="display: inline-flex; margin-top: 1rem;"><img src="./src/upload/mail-icon.png">
-                        <a style="margin-left: 1rem;" href="mailto:olimpia.zyborowicz@gmail.com">olimpia.zyborowicz@gmail.com</a>
+                        <a style="margin-left: 1rem;"
+                            href="mailto:olimpia.zyborowicz@gmail.com">olimpia.zyborowicz@gmail.com</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="underline"></div>
-        <div style="display: flex; justify-content: center; padding: 1rem 0;"><a href="https://www.facebook.com/"><img style="padding: 2rem;" src="./src/upload/logo-fb2.png"></a><a href="https://www.instagram.com/"><img style="padding: 2rem;" src="./src/upload/instagram-logo.png"></a></div>
+        <div style="display: flex; justify-content: center; padding: 1rem 0;"><a href="https://www.facebook.com/"><img
+                    style="padding: 2rem;" src="./src/upload/logo-fb2.png"></a><a href="https://www.instagram.com/"><img
+                    style="padding: 2rem;" src="./src/upload/instagram-logo.png"></a></div>
     </section>
     <section class="autor">
         <p>Projekt strony: Aleksandra Gabryś; <a href="https://paweldomalewski.github.io/domalewski-IT/">Wykonanie:
@@ -118,32 +138,32 @@
 <script>
     let slideIndex = 1;
     showSlides(slideIndex);
-    
+
     function plusSlides(n) {
-      showSlides(slideIndex += n);
+        showSlides(slideIndex += n);
     }
-    
+
     function currentSlide(n) {
-      showSlides(slideIndex = n);
+        showSlides(slideIndex = n);
     }
-    
+
     function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     }
-    
-    </script>
+
+</script>
 <script>
     function mobileMenuToggle(x) {
         x.classList.toggle("change");
