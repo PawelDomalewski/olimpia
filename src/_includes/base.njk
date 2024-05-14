@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/stylesheets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">    
+    <meta name="description" content="Cukiernia An-Ka, torty na zamówienie i wiele innych słodkości!">
+    <title> {{ title }} </title>
+</head>
+<body style="background-image: url(./upload/background.png);">
+    {{ content | safe }}
+</body>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    
+    </script>
+<script>
+    function mobileMenuToggle(x) {
+        x.classList.toggle("change");
+        var x = document.getElementById("myTopnav");
+        if (x.className === "with-topnav") {
+            x.className += " responsive";
+        }
+        else {
+            x.className = "with-topnav";
+        }
+    }
+</script>
+</html>
