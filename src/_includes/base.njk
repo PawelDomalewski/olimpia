@@ -14,7 +14,9 @@
     <title> {{ title }} </title>
 </head>
 <body style="background-image: url(./upload/background.png);">
+    {% include 'header.njk' %}
     {{ content | safe }}
+    {% include 'footer.njk' %}
 </body>
 
 <script>
