@@ -116,9 +116,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 10%;
+    margin: auto;
     align-items: center;
     padding: 2rem 0;
+    max-width: 1220px;
 }
 
 .rev:nth-child(even) {
