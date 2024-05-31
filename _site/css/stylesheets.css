@@ -104,6 +104,10 @@ body {
     transform: translate(0, -11px) rotate(45deg);
 }
 
+.activea {
+    font-weight: 700;
+}
+
 .text-main {
     margin: 2rem 20%;
     border: solid 1px var(--txt-color-1);
