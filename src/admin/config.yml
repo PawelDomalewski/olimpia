@@ -3,6 +3,13 @@ backend:
   branch: main
 media_folder: "_site/upload"
 public_folder: "/upload"
+commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
 collections:
   - name: "blog"
     label: "Blog"
