@@ -1,9 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "_site/upload"
-public_folder: "/upload"
-commit_messages:
+  commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
     delete: Delete {{collection}} “{{slug}}”
@@ -11,9 +9,11 @@ commit_messages:
     deleteMedia: Delete “{{path}}”
     openAuthoring: '{{message}}'
 collections:
+media_folder: "_site/upload"
+public_folder: "/upload"
   - name: "blog"
     label: "Blog"
-    folder: "_site/blog"
+    folder: "src/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
