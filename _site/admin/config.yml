@@ -9,8 +9,8 @@ collections:
     folder: "src/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    layout: "post"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Tytuł", name: "title", widget: "string" }
       - { label: "Zdjęcie", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
