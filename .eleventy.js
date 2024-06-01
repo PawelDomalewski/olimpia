@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("src/**/*.css");
     eleventyConfig.addWatchTarget("src/**/*.js");
     eleventyConfig.addWatchTarget("src/**/*.yml");
+    eleventyConfig.addWatchTarget("src/**/*.md");
 
     return {
         dir: {
