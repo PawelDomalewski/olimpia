@@ -19,3 +19,14 @@ module.exports = function(eleventyConfig) {
     
 }
 
+const passthroughFolders = [
+    "src/upload",
+    "src/blog"
+  ]
+
+  passthroughFolders.forEach(
+    folder => {
+      eleventyConfig.addPassthroughCopy(folder);
+      eleventyConfig.ignores.add(folder);
+    }
+  );
