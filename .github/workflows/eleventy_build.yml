@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Build Eleventy site
-        run: npm eleventy
+        run: npm run build
