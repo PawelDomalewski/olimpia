@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("src/**/*.scss");
     eleventyConfig.addWatchTarget("src/**/*.css");
     eleventyConfig.addWatchTarget("src/**/*.js");
-    eleventyConfig.addWatchTarget("src/**/*.jpg");
+    eleventyConfig.addWatchTarget("./src/**/*.jpg");
     eleventyConfig.addWatchTarget("src/admin/config.yml");
     eleventyConfig.addWatchTarget("src/admin/*.html");
     eleventyConfig.addWatchTarget("src/**/*.md");
