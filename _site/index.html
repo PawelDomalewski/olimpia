@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <meta name="description" content="">
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title> Olimpa fotografie </title>
 </head>
 <body style="background-image: url(/upload/background.png);">
@@ -182,6 +183,17 @@ location.reload();
     </section>
     
 </body>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
 <script>
     let slideIndex = 1;
