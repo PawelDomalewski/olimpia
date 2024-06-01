@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("src/admin/*.yml");
     eleventyConfig.addWatchTarget("src/admin/*.html");
     eleventyConfig.addWatchTarget("src/**/*.md");
+	eleventyConfig.addWatchTarget("./src/blog/");
 
     return {
         dir: {
