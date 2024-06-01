@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
     <meta name="description" content="">
-    <title> Olimpa fotografie </title>
+    <title> Testowa Galeria 2 </title>
 </head>
 <body style="background-image: url(/upload/background.png);">
 
@@ -24,7 +24,7 @@
             <img src="/upload/logo.png" class="logo-full" alt="logo">
         </div>
         <div style="padding: 0em 1em;" class="navbar">
-            <a href="/" class="activea">Strona główna</a>
+            <a href="/" class="">Strona główna</a>
             <a href="/o-mnie" class="">O mnie</a>
             <a href="/oferta" class="">Oferta</a>
             <a href="/wasze-historie" class="">Wasze historie</a>
@@ -44,108 +44,20 @@
     }
 </script>
     
-    <section class="slideshow">
-        <div class="slideshow-container">
+<div class="gallery">
+    <p><img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test">
+<img src="/upload/Hero01.jpg" alt="Test"></p>
 
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="upload/Hero01.jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="./upload/Hero01.jpg" style="width:100%">
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="./upload/Hero01.jpg" style="width:100%">
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-    </section>
-    <section class="text-main">
-        <p>Hej! Miło mi, że odwiedziliście moją stronę.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus justo eget porttitor molestie. Cras
-            sapien diam, malesuada vitae tempus vel, rutrum eget sapien. Maecenas rutrum at metus sed sagittis.
-            Suspendisse vel tortor sit amet urna porttitor faucibus. Nulla sit amet purus eu tellus pharetra suscipit
-            quis ut urna. Mauris ullamcorper purus libero, eget hendrerit urna laoreet eget. Aenean vel faucibus elit,
-            et varius mauris. Integer ac efficitur augue, sit amet mollis lectus. Aenean tincidunt est at nunc aliquet
-            lacinia. Fusce ac sapien ac mi consectetur rutrum. Fusce nec consequat augue. Vestibulum condimentum nunc ac
-            leo egestas condimentum. Ut gravida ipsum nunc, at lobortis ipsum tempus non. </p>
-    </section>
+</div>
 
-    
-
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    
-    </script>
-<script>
-    function mobileMenuToggle(x) {
-        x.classList.toggle("change");
-        var x = document.getElementById("myTopnav");
-        if (x.className === "with-topnav") {
-            x.className += " responsive";
-        }
-        else {
-            x.className = "with-topnav";
-        }
-    }
-</script>
-<script>/*
-var images = ['./src/upload/1.png', './src/upload/2.webp', './src/upload/3.png', './src/upload/7.png', './src/upload/11.png', './src/upload/13.png', './src/upload/5.png', './src/upload/8.png'];
-var index = 1;
-var heroSection = document.getElementById('backgroundHero');
-
-function changeBackground() {
-heroSection.style.backgroundImage = 'linear-gradient(to right, white , transparent), url(' + images[index] + ')';
-index = (index + 1) % images.length;
-}
-
-setInterval(changeBackground, 5500);
-/*
-document.addEventListener('visibilitychange', function() {
-if (!document.hidden) {
-location.reload();
-}
-});*/
-</script>
     <section class="footer" id="kontakt">
         <div class="footer-info">
             <div><img src="/upload/logo-footer.png" alt="logo"></div>
