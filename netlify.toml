@@ -1,0 +1,6 @@
+[build]
+  publish = "_site"
+  command = "npx eleventy"
+
+[context.production.environment]
+  NODE_ENV = "production"
