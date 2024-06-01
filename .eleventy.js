@@ -1,4 +1,4 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("/src/css/stylesheets.css");
     eleventyConfig.addPassthroughCopy("/src/upload");
@@ -10,14 +10,16 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("src/admin/config.yml");
     eleventyConfig.addWatchTarget("src/admin/*.html");
     eleventyConfig.addWatchTarget("src/**/*.md");
-	eleventyConfig.addWatchTarget("./src/blog/");
+    eleventyConfig.addWatchTarget("./src/blog/");
 
     return {
         dir: {
             input: "src",
-            output: "_site"
+            output: "_site",
+            includes: "_includes",
+            data: "_data"
         }
     }
-    
+
 }
 
