@@ -10,8 +10,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install dependencies
-        run: npm install
-
       - name: Build Eleventy site
-        run: npx eleventy
+        run: npm eleventy
