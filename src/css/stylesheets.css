@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+h2 {
+    font-weight: 600;
+}
+
 body {
     background-image: url(./upload/background.png);
 }
