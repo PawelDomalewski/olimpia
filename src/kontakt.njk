@@ -91,6 +91,9 @@ layout: 'base.njk'
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+    setInterval(() => {
+    plusSlides(1);
+  }, 3000);
 
 </script>
 <script>
