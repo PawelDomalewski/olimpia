@@ -512,3 +512,9 @@ img {
     width: 100%;
     margin: 0rem 0;
 }
+
+@media screen and (max-width: 960px) {
+    .gallery>p {
+        width: 100%;
+    }
+}
