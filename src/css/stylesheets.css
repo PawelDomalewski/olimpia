@@ -502,7 +502,7 @@ img {
     margin: 1rem 0rem;
 }
 
-.gallery>p:nth-child(odd) {
+.gallery>p:has(+ img) {
     padding: 0;
     border: none;
 }
