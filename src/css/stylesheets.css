@@ -493,14 +493,16 @@ img {
 }
 
 .gallery>p {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+    border: solid 1px var(--txt-color-1);
+    background-color: white;
+    padding: 2rem;
+    line-height: 2rem;
+    width: 496px;
+    width: 45%;
 }
 
 .gallery>p>img {
-    width: 290px;
-    height: 290px;
-    margin: 0.5rem;
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
 }
