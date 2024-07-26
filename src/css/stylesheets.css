@@ -499,6 +499,7 @@ img {
     line-height: 2rem;
     width: 496px;
     width: 45%;
+    margin: 1rem 0rem;
 }
 
 .gallery>p:nth-child(odd) {
