@@ -204,6 +204,10 @@ body {
     transition: 100ms;
 }
 
+.cta {
+    text-decoration: none;
+    padding: 45px 120px;
+}
 
 ul>li>a {
     text-decoration: none;
