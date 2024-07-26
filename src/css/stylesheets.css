@@ -308,6 +308,7 @@ ul>h2 {
         padding: 1em 0em;
         width: 100%;
         background-color: var(--backgroundcolor);
+        font-size: 1rem;
     }
 
     .text-main {
